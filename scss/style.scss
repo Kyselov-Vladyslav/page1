@@ -1,16 +1,19 @@
+@use 'variables' as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap");
+
+
 body {
   margin: 0;
   height: 300vh;
   font-family: "Ubuntu", sans-serif;
+
   background: url("../assets/background.jpg") center/cover fixed;
 }
-
 .header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.637);
 }
-
 .header__container {
   position: sticky;
   max-width: 100%;
@@ -27,19 +30,18 @@ body {
   align-items: center;
   display: flex;
   /* max-width: 500px; */
+
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
   text-align: center;
 }
-
 .top-text {
-  color: #f7f6f2;
+  color: rgb(247, 246, 242);
   padding-top: 15px;
   font-size: 30px;
   font-weight: bold;
 }
-
 .top-link {
   color: cornsilk;
   text-decoration: none;
@@ -51,16 +53,15 @@ body {
   width: 150px;
   transition-duration: 0.5s;
 }
-
 header a:hover {
-  background-color: #8c0303;
+  background-color: $color1;
 }
-
 /* header::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.884);
   display: block;
 } */
+
 @media screen and (min-width: 800px) {
   .top-text {
     font-size: 80px;
@@ -71,5 +72,3 @@ header a:hover {
     font-size: 120px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
